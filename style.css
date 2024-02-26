@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: pink; /* Default background color */
+    text-align: center;
+}
+.container {
+    height: 70vh;
+    width: 97vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Corrected spelling */
+    align-items: center; /* Corrected spelling */
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: 0cap;
+    font-size: 8vmin;
+    background-color: rgb(214, 248, 246);
+}
+
+#btn {
+    background-color: white;
+    color: rgb(18, 6, 53);
+    height: 7vmin;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+}
+
+#newbtn,
+#newbtn1 {
+    background-color: white;
+    color: rgb(18, 6, 53);
+    height: 7vmin;
+    width: 25vmin;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    margin: auto;
+    display: block;
+}
+
+.msg {
+    color: black;
+    font-size: 5vmin;
+}
+
+.msgcontainer,
+.nmsgcontainer {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+.draw {
+    color: black;
+    font-size: 5vmin;
+}
+.moonbtn {
+    background-color: white;
+    color: rgb(18, 6, 53);
+    height: 5vmin;
+    width: 10vmin;
+    padding: 0.5rem;
+    border: 1rem;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem; /* Optional: Add margin for spacing */
+    display: block;
+}
+
+.dark {
+    color: white;
+}
+
+.light {
+    color: black;
+}
+.dark .msg,
+.dark .draw {
+    color: white; /* Text color when theme is dark */
+}
+
+.msg,
+.draw {
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
