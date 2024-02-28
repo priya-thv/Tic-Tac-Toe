@@ -117,3 +117,38 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: auto; /* Adjust height for smaller screens */
+        width: 90vw;
+    }
+
+    .game {
+        height: 50vmin;
+        width: 50vmin;
+    }
+
+    .box {
+        height: 15vmin;
+        width: 15vmin;
+        font-size: 6vmin;
+    }
+
+    #newbtn,
+    #newbtn1 {
+        width: 60vmin;
+    }
+
+    .msg,
+    .draw {
+        font-size: 3vmin;
+    }
+
+    .moonbtn {
+        height: 3vmin;
+        width: 6vmin;
+        padding: 0.3rem;
+        font-size: 0.8rem;
+    }
+}
